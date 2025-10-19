@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header">
+          <img
+            src="./images/logo.svg"
+            class="header__logo"
+            alt="Base Apparel logo"
+          />
+        </header>
+        <section class="hero">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/hero-desktop.jpg"
+            />
+            <img
+              src="./images/hero-mobile.jpg"
+              alt="Fashion model wearing Base Apparel's new collection"
+            />
+          </picture>
+        </section>
+        <section class="coming-soon">
+          <h1 class="coming-soon__title">
+            <span class="coming-soon__title-style">We're</span> coming soon
+          </h1>
+          <p class="coming-soon__CTA">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" class="coming-soon__form" id="coming-soon__form">
+            <div class="coming-soon__field-group">
+              <label for="email" class="coming-soon__label sr-only"
+                >Email Address</label
+              >
+              <div class="coming-soon__input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="coming-soon__input"
+                  placeholder="Email Address"
+                  autocomplete="email"
+                  aria-invalid="false"
+                  aria-describedby="email-error"
+                />
+                <img
+                  src="./images/icon-error.svg"
+                  alt=""
+                  class="coming-soon__error-icon"
+                  hidden
+                />
+                <button
+                  class="coming-soon__button"
+                  id="coming-soon__button"
+                  aria-label="Coming soon form submit button"
+                >
+                  <img
+                    src="./images/icon-arrow.svg"
+                    alt=""
+                    class="coming-soon__button-icon"
+                  />
+                </button>
+              </div>
+              <small class="coming-soon__error" id="email_error" hidden>
+                Please provide a valid email
+              </small>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.github.com/janstenman">Jan Stenman</a>.
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
